@@ -1,0 +1,43 @@
+.App {
+  text-align: center;
+}
+
+form{
+  display: inline-block;
+  padding:25px;
+  background-color: antiquewhite;
+}
+form div{
+  margin:20px;
+}
+form label{
+  display: inline-block;
+  width:150px;
+}
+button{
+  margin:3px;
+  color:blue;
+  background-color: yellow;
+}
+body{
+  background-color :aliceblue;
+}
+.profilePic{
+  height:200px;
+  width:200px;
+  border:2px solid yellow;
+  object-fit: cover;
+}
+
+nav{
+  background-color: lightgreen;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+img{
+  height: 200px;
+width:200px}
+.edit{
+  background-color:honeydew;
+}
