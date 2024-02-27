@@ -10,17 +10,16 @@ import Editprofile from "./component/Editprofile";
 function App() {
   return (
     <div className="App">
-      {/* <BrowserRouter>
-     <Routes>
-      <Route path ="/" element={<Login/>}></Route>
-      <Route path ="/Signup" element={<Signup/>}></Route>
-      <Route path ="/home" element={<Home/>}></Route>
-      <Route path ="/tasks" element={<Tasks/>}></Route>
-      <Route path ="/leaves" element={<Leaves/>}></Route>
-      <Route path ="/editProfile" element={<Editprofile/>}></Route>
-     </Routes>
-     
-     </BrowserRouter> */}
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Login />}></Route>
+          <Route path="/Signup" element={<Signup />}></Route>
+          <Route path="/home" element={<Home />}></Route>
+          <Route path="/tasks" element={<Tasks />}></Route>
+          <Route path="/leaves" element={<Leaves />}></Route>
+          <Route path="/editProfile" element={<Editprofile />}></Route>
+        </Routes>
+      </BrowserRouter>
       <h1>Hi</h1>
     </div>
   );
