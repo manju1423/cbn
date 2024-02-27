@@ -13,7 +13,7 @@ function Login() {
     axios.defaults.baseURL = "";
     axios.defaults.headers.common["authorization"] =
       localStorage.getItem("token");
-    validateToken();
+    //validateToken();
   }, []);
 
   let validateLogin = async () => {};
