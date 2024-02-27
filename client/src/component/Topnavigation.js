@@ -25,7 +25,7 @@ localStorage.clear();
         method:"delete",
         body: dataToSend,
  };
- let JsonData = await fetch ("http://localhost:3741/deleteProfile", reqOptions);
+ let JsonData = await fetch ("/deleteProfile", reqOptions);
  let jsoData = await JsonData.json();
 
  if (jsoData.status == "success"){

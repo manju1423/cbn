@@ -14,7 +14,7 @@ function Login() {
 
 
   useEffect(()=>{
-    axios.defaults.baseURL ="http://localhost:3741";
+    axios.defaults.baseURL ="";
     axios.defaults.headers.common["authorization"] = 
     localStorage.getItem("token");
   validateToken();
@@ -55,7 +55,7 @@ return async()=>{
     method :"POST",
   body: dataToSend,
 };
-  let JSONData = await fetch("http://localhost:3741/Login",reqOptions)
+  let JSONData = await fetch("/Login",reqOptions)
   let JsoData = await JSONData.json();
   if(JsoData.status =="failure"){
     alert(JsoData.msg);
